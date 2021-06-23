@@ -1,0 +1,10 @@
+php:
+	date.timezone: Europe/Prague
+
+application:
+	scanDirs: no
+
+services:
+	twitterDavidGrudl: Twitter(...secret keys...)
+
+	twitterGeekovo: Twitter(...secret keys...)

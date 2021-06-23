@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="David Grudl; https://davidgrudl.com">
+
+	<title>{block title|striphtml|trim}David Grudl.com{/block}</title>
+
+	<link rel="stylesheet" href="{$basePath}/css/screen.css">
+	<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin,latin-ext" rel="stylesheet">
+	<link href="http://www.myopenid.com/server" rel="openid.server">
+	<link href="http://grudl.myopenid.com" rel="openid.delegate">
+</head>
+
+<body>
+	<script n:syntax=off>
+		ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+		ga('create','UA-123456','auto'); ga('send','pageview');
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+	{include content}
+
+	<script src="{$basePath}/js/jquery.js"></script>
+	<script src="{$basePath}/js/jquery-ui-custom.js"></script>
+	<script src="{$basePath}/js/jquery.ui.touch-punch.js"></script>
+	<script src="{$basePath}/js/turn.js"></script>
+	<script src="{$basePath}/js/main.js"></script>
+</body>
+</html>
